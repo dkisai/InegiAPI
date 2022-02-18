@@ -6,7 +6,7 @@ from folium import plugins
 
 # url con token
 # Ejemplo: todos los bares en celaya en un radio de 5km del centro
-token = "59607fb5-9eeb-d10b-ca13-c4986cfb749a"
+token = "token"
 rango = "5000"
 latit = "20.522188"
 longi = "-100.814037"
