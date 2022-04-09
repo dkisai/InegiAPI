@@ -6,11 +6,11 @@ from folium import plugins
 
 # url con token
 # Ejemplo: todos los bares en celaya en un radio de 5km del centro
-token = "token"
+token = "59607fb5-9eeb-d10b-ca13-c4986cfb749a"
 rango = "5000"
 latit = "20.522188"
 longi = "-100.814037"
-url = "https://www.inegi.org.mx/app/api/denue/v1/consulta/Buscar/bar/"+latit+","+longi+"/"+rango+"/"+token
+url = "https://www.inegi.org.mx/app/api/denue/v1/consulta/Buscar/oxxo/"+latit+","+longi+"/"+rango+"/"+token
 # Respuesta de la consulta a la API
 respuesta = requests.get(url)
 respuesta = respuesta.text
@@ -28,4 +28,4 @@ mapa = folium.Map(
 )
 #Heatmap
 mapa.add_child(plugins.HeatMap(df, radius=20))
-mapa.save("mapa.html")
+mapa.save("index.html")
